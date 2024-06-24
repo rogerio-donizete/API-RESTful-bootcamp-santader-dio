@@ -27,12 +27,6 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-tasks.jar {
-	manisfest {
-		attibutes["Main-Class"] = "me.dio.santander_bootcamp_java.SantanderBootcampJava2024Application"
-	}
-}
-
 tasks.named('test') {
 	useJUnitPlatform()
 }
